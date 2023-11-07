@@ -1,0 +1,41 @@
+i.icon {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  min-width: 0.5rem;
+  min-height: 0.5rem;
+  display: inline-block;
+
+  &.icon-search {
+    mask: url('../../img/icons/search.svg') no-repeat center / contain;
+    -webkit-mask: url('../img/icons/search.svg') no-repeat center / contain;
+  }
+  &.icon-person {
+    mask: url('../img/icons/person.svg') no-repeat center / contain;
+    -webkit-mask: url('../img/icons/person.svg') no-repeat center / contain;
+  }
+  &.icon-heart {
+    mask: url('../img/icons/heart.svg') no-repeat center / contain;
+    -webkit-mask: url('../img/icons/heart.svg') no-repeat center / contain;
+  }
+  &.icon-basket {
+    mask: url('../img/icons/basket.svg') no-repeat center / contain;
+    -webkit-mask: url('../img/icons/basket.svg') no-repeat center / contain;
+  }
+  &.icon-hamburger-menu {
+    mask: url('../img/icons/hamburger.svg') no-repeat center / contain;
+    -webkit-mask: url('../img/icons/hamburger.svg') no-repeat center / contain;
+  }
+  &.icon-x {
+    mask: url('../img/icons/x.svg') no-repeat center / contain;
+    -webkit-mask: url('../img/icons/x.svg') no-repeat center / contain;
+  }
+  &.icon-arrow-down-90 {
+    mask: url('../img/icons/arrow-90deg-down.svg') no-repeat center / contain;
+    -webkit-mask: url('../img/icons/arrow-90deg-down.svg') no-repeat center / contain;
+  }
+  &.icon-arrow-left-circle {
+    mask: url('../img/icons/arrow-left-circle.svg') no-repeat center / contain;
+    -webkit-mask: url('../img/icons/arrow-left-circle.svg') no-repeat center / contain;
+  }
+}

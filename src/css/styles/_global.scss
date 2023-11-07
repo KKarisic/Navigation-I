@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+// Screen sizes
+@mixin sm-down {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin sm-up {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin md-up {
+  @media (min-width: 1110px) {
+    @content;
+  }
+}
+@mixin md-down {
+  @media (max-width: 1109px) {
+    @content;
+  }
+}
+
+@mixin lg-up {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+.mobile-show {
+  display: flex;
+}
+li.active {
+  border-bottom: 4px solid rgb(110, 231, 183);
+}
+.opened {
+  display: block;
+}
+.rotate180 {
+  transform: rotate(180deg);
+}
+.closed {
+  display: none;
+}
+.fadeInRight {
+  animation-name: fadeInRight;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 1;
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fadeOutRight {
+  animation-name: fadeOutRight;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+@keyframes fadeOutRight {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+}
